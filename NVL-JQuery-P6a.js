@@ -6,13 +6,14 @@ $(document).ready(function(){
     $(document).attr("li.odd span".toUpperCase);
 	/*$("[class*=odd]").toUpperCase;*/
 	
-	var lista = $("ul.list li").length;
-	$("ul.list li").each(function(){
-	if( lista === 6){
-			$(this).height(100);
+	var lista = $("ul li");
+	alert(lista.length);
+	$("ul li").each(function(recorrer){
+	if(recorrer>5 && recorrer<7){
+			$(this).height(recorrer + 50);
 	}
 	});
-	/*$("#cataluña").height(100);*/
+	
 	
 	$("#murcia").appendTo("#madrid");
 	
